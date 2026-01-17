@@ -21,6 +21,11 @@ body {
     border-style: none;
 }
 
+.common-btn:hover {
+    color: #E6533C;
+    background-color:#FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.386);
+}
 
 
 /* Main sections related styles */
@@ -250,7 +255,7 @@ body {
 .run-txt p {
     color: #FFFFFF60;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
     padding-bottom: 30px;
 }
 
@@ -258,22 +263,140 @@ body {
     max-width: 100%;
     border-radius: 18px;
     padding: 30px 30px 30px 0;
-    /* display: flex;
-    align-items: center; */
 }
 
 /* training and exercise related styles */
 .train-exer-container{
     max-width: 90%;
     margin: 0 auto;
+    margin-bottom: 100px;
+}
 
+.train-exer-container-heading{
+    margin-bottom: 55px;
+}
+
+.train-exer-container-img img {
+    max-width: 100%;
 }
 
 .train-exer-container-img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.train-exer-container-img img{
-    max-width: 100%;
+.exe2, .exe4 {
+    grid-column: span 2;
 }
+
+.train-exer-container-heading h3{
+    font-size: 48px;
+    color: #FFFFFF;
+    padding-bottom: 14px;
+}
+
+.train-exer-container-heading p{
+    font-size: 14px;
+    color: #FFFFFF90;
+}
+
+
+/* team section related styles */
+.team-container{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 88px;
+}
+
+.team-container-txt{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-container-txt h3{
+    font-weight: bold;
+    font-size: 48px;
+    color: #FFFFFF;
+    padding-bottom: 14px;
+}
+
+.team-container-txt p {
+    font-size: 14px;
+    color: #FFFFFF80;
+}
+
+.team-container-img div img {
+    max-width: 326px;
+    max-height: 272px;
+}
+
+.team-container-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+
+    background-color: rgba(0, 0, 0, 0.546);
+    padding: 20px;
+    border-radius: 18px;
+}
+
+
+/* footer section related styles */
+#footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container{
+    max-width: 90%;
+    margin: 0 auto;
+    /* background-color: rgb(177, 224, 171); */
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.footer-top-fitness h2{
+    font-size: 70px;
+    color: #E6533C;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.footer-top-fitness p {
+    font-size: 14px;
+    color: #ffffff7e;
+    line-height: 25px;
+}
+
+.footer-top-get h5{
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding-bottom: 18px;
+}
+
+.footer-top-get p {
+    font-size: 18px;
+    color: #ffffff8d;
+    line-height: 30px;
+}
+
+.footer-bottom{
+    text-align: center;
+    font-size: 20px;
+    color: #FFFFFF50;
+    padding: 36px 0 35px;
+    border-top: 1.4px solid #FFFFFF10;
+}
+
+
+
+
+
+
