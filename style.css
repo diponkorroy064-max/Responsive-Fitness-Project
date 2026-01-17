@@ -63,12 +63,14 @@ body {
     font-size: 18px;
     color: #FFFFFF;
     text-decoration: none;
+    /* position: relative; */
 }
 
 .header-nav a:hover {
     background-color: #E6533C;
     padding: 10px 20px;
     border-radius: 39px;
+    /* position: absolute;  */
 }
 
 /* hero section related styles */
@@ -235,14 +237,13 @@ body {
     /* gap: 165px; */
     justify-content: space-between;
     align-items: center;
-
     background-color: rgba(34, 34, 34, 1);
-    border-radius: 18px;
+    border-radius: 18px; 
+    padding: 30px 30px 30px 50px;
 }
 
 .run-txt{
     max-width: 443px;
-    padding: 40px 0 40px 60px;
 }
 
 .run-txt h3{
@@ -260,9 +261,8 @@ body {
 }
 
 .run-img img{
-    max-width: 100%;
+    width: 100%;
     border-radius: 18px;
-    padding: 30px 30px 30px 0;
 }
 
 /* training and exercise related styles */
@@ -277,17 +277,19 @@ body {
 }
 
 .train-exer-container-img img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .train-exer-container-img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 201.5px);
 }
 
 .exe2, .exe4 {
     grid-column: span 2;
+    grid-row: span 1;
 }
 
 .train-exer-container-heading h3{
@@ -301,6 +303,34 @@ body {
     color: #FFFFFF90;
 }
 
+.exe1, .exe2, .exe5, .exe6{
+    position: relative;
+}
+
+.overley{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.first-overley{
+    background-color: rgba(6, 255, 210, 0.5);
+}
+
+.second-overley{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.fifth-overley{
+    background-color: rgba(66, 255, 0, 0.3);
+}
+
+.sixth-overley{
+    background-color: rgba(0, 71, 255, 0.3);
+}
 
 /* team section related styles */
 .team-container{
@@ -326,15 +356,16 @@ body {
     color: #FFFFFF80;
 }
 
-.team-container-img div img {
-    max-width: 326px;
-    max-height: 272px;
+.team-container-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
 }
 
 .team-container-img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 272px);
     gap: 20px;
 
     background-color: rgba(0, 0, 0, 0.546);
