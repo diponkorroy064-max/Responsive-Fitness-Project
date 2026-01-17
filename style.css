@@ -35,7 +35,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 57px;
-    padding-bottom: 95px;
+    margin-bottom: 90px;
+    /* background-color: aqua; */
 }
 
 .header-logo {
@@ -51,7 +52,6 @@ body {
     border: 0.5px solid white;
     border-radius: 39px;
     padding: 10px 20px;
-
 }
 
 .header-nav a {
@@ -66,13 +66,14 @@ body {
     border-radius: 39px;
 }
 
-
+/* hero section related styles */
 .hero-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 90%;
     margin: 0 auto;
+    /* background-color: aqua; */
 }
 
 .hero-container-txt {
@@ -112,7 +113,7 @@ body {
 
     position: absolute;
     top: 125px;
-   left: 230px;
+    left: 230px;
 }
 
 .part500 h3 {
@@ -169,20 +170,110 @@ body {
 }
 
 
+/* habit related styles */
+.habit-container{
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    /* background-color: aqua; */
+}
+
+.habit-head{
+    max-width: 600px;
+    margin: 0 auto 57px; 
+}
+
+.habit-heading{
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 14px;
+}
+
+.habit-container h3, h5{
+    color: #FFFFFF;
+}
+
+.habit-container p{
+    color: #FFFFFF60;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.habit-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.common-habit-card{
+    max-width: 231px;
+}
+
+.common-habit-card h5{
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.common-habit-card img {
+  border-radius: 50%;
+}
 
 
+/* run container related styles */
+.run-container{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    /* gap: 165px; */
+    justify-content: space-between;
+    align-items: center;
 
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+}
 
+.run-txt{
+    max-width: 443px;
+    padding: 40px 0 40px 60px;
+}
 
+.run-txt h3{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 14px;
+}
 
+.run-txt p {
+    color: #FFFFFF60;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
 
+.run-img img{
+    max-width: 100%;
+    border-radius: 18px;
+    padding: 30px 30px 30px 0;
+    /* display: flex;
+    align-items: center; */
+}
 
+/* training and exercise related styles */
+.train-exer-container{
+    max-width: 90%;
+    margin: 0 auto;
 
+}
 
+.train-exer-container-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
-
-
-
-
-
-
+.train-exer-container-img img{
+    max-width: 100%;
+}
