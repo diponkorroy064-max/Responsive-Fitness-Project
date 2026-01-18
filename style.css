@@ -6,6 +6,10 @@ body {
     background-color: rgba(0, 0, 0, 0.895);
 }
 
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +20,8 @@ body {
 .common-btn {
     background-color: #E6533C;
     color: #FFFFFF;
+    font-size: 1.125rem;
+    font-weight: 600;
     padding: 16px 40px;
     border-radius: 42px;
     border-style: none;
@@ -23,13 +29,13 @@ body {
 
 .common-btn:hover {
     color: #E6533C;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     border: 0.5px solid rgba(0, 0, 0, 0.386);
 }
 
 
 /* Main sections related styles */
-.main-container{
+.main-container {
     margin-bottom: 100px;
 }
 
@@ -46,7 +52,7 @@ body {
 
 .header-logo {
     color: #fc4b30;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: italic;
     font-weight: bold;
 }
@@ -60,7 +66,7 @@ body {
 }
 
 .header-nav a {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #FFFFFF;
     text-decoration: none;
     /* position: relative; */
@@ -73,10 +79,20 @@ body {
     /* position: absolute;  */
 }
 
+.header-menu {
+    display: none;
+}
+
+.header-menu a {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
 /* hero section related styles */
 .hero-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 90vw;
     margin: 0 auto;
@@ -84,11 +100,11 @@ body {
 }
 
 .hero-container-txt {
-    max-width: 520px;
+    width: 36vw;
 }
 
 .hero-container-txt h1 {
-    font-size: 78px;
+    font-size: 4.875rem;
     color: #FFFFFF;
     padding-bottom: 28px;
 }
@@ -106,8 +122,8 @@ body {
 }
 
 /* hero image parts */
-.hero-container-img{ 
-   position: relative;
+.hero-container-img {
+    position: relative;
 }
 
 .part500 {
@@ -133,7 +149,7 @@ body {
     font-size: 12px;
 }
 
-.img-middle-icon{
+.img-middle-icon {
     position: absolute;
     top: 300px;
     left: -50px;
@@ -161,12 +177,12 @@ body {
     bottom: 63px;
 }
 
-.part300-icon i{
+.part300-icon i {
     font-size: 30px;
     color: #E6533C;
 }
 
-.part300 .part300-txt h4{
+.part300 .part300-txt h4 {
     font-size: 24px;
     color: #FAFAF9;
 }
@@ -178,58 +194,64 @@ body {
 
 
 /* habit related styles */
-.habit-container{
+.habit-container {
     max-width: 90vw;
     margin: 0 auto;
-    text-align: center;
     margin-bottom: 100px;
     /* background-color: aqua; */
 }
 
-.habit-head{
+.habit-head {
     max-width: 600px;
-    margin: 0 auto 57px; 
+    margin: 0 auto 57px;
+    text-align: center;
 }
 
-.habit-heading{
+.habit-heading {
     font-size: 48px;
     font-weight: bold;
     padding-bottom: 14px;
 }
 
-.habit-container h3, h5{
+.habit-container h3,
+h5 {
     color: #FFFFFF;
 }
 
-.habit-container p{
+.habit-container p {
     color: #FFFFFF60;
     font-size: 14px;
     line-height: 25px;
 }
 
 .habit-cards {
+    /* background-color: aqua; */
     display: flex;
-    justify-content: space-around;
+    gap: 30px;
 }
 
-.common-habit-card{
-    max-width: 231px;
+.common-habit-card {
+    text-align: center;
 }
 
-.common-habit-card h5{
+.common-habit-card img {
+    width: 100%;
+}
+
+.common-habit-card h5 {
     font-size: 18px;
     font-weight: bolder;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 
 .common-habit-card img {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 
 /* run container related styles */
-.run-container{
+.run-container {
     max-width: 90vw;
     margin: 0 auto;
     margin-bottom: 100px;
@@ -238,15 +260,15 @@ body {
     /* justify-content: space-between; */
     align-items: center;
     background-color: rgba(34, 34, 34, 1);
-    border-radius: 18px; 
+    border-radius: 18px;
     padding: 30px 30px 30px 50px;
 }
 
-.run-txt{
+.run-txt {
     max-width: 443px;
 }
 
-.run-txt h3{
+.run-txt h3 {
     color: #FFFFFF;
     font-size: 48px;
     font-weight: bold;
@@ -260,19 +282,19 @@ body {
     padding-bottom: 30px;
 }
 
-.run-img img{
+.run-img img {
     width: 100%;
     border-radius: 18px;
 }
 
 /* training and exercise related styles */
-.train-exer-container{
+.train-exer-container {
     max-width: 90vw;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 
-.train-exer-container-heading{
+.train-exer-container-heading {
     margin-bottom: 55px;
 }
 
@@ -281,33 +303,37 @@ body {
     height: 100%;
 }
 
-.train-exer-container-img{
+.train-exer-container-img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 201.5px);
 }
 
-.exe2, .exe4 {
+.exe2,
+.exe4 {
     grid-column: span 2;
     grid-row: span 1;
 }
 
-.train-exer-container-heading h3{
+.train-exer-container-heading h3 {
     font-size: 48px;
     color: #FFFFFF;
     padding-bottom: 14px;
 }
 
-.train-exer-container-heading p{
+.train-exer-container-heading p {
     font-size: 14px;
     color: #FFFFFF90;
 }
 
-.exe1, .exe2, .exe5, .exe6{
+.exe1,
+.exe2,
+.exe5,
+.exe6 {
     position: relative;
 }
 
-.overley{
+.overley {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -316,35 +342,35 @@ body {
     bottom: 0;
 }
 
-.first-overley{
+.first-overley {
     background-color: rgba(6, 255, 210, 0.5);
 }
 
-.second-overley{
+.second-overley {
     background-color: rgba(255, 0, 0, 0.3);
 }
 
-.fifth-overley{
+.fifth-overley {
     background-color: rgba(66, 255, 0, 0.3);
 }
 
-.sixth-overley{
+.sixth-overley {
     background-color: rgba(0, 71, 255, 0.3);
 }
 
 /* team section related styles */
-.team-container{
+.team-container {
     max-width: 90vw;
     margin: 0 auto;
     margin-bottom: 88px;
 }
 
-.team-container-txt{
+.team-container-txt {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.team-container-txt h3{
+.team-container-txt h3 {
     font-weight: bold;
     font-size: 48px;
     color: #FFFFFF;
@@ -362,7 +388,7 @@ body {
     border-radius: 18px;
 }
 
-.team-container-img{
+.team-container-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 272px);
@@ -375,24 +401,24 @@ body {
 
 
 /* footer section related styles */
-#footer{
+#footer {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-container{
+.footer-container {
     max-width: 90vw;
     margin: 0 auto;
     /* background-color: rgb(177, 224, 171); */
 }
 
-.footer-top{
+.footer-top {
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
     padding-bottom: 80px;
 }
 
-.footer-top-fitness h2{
+.footer-top-fitness h2 {
     font-size: 70px;
     color: #E6533C;
     font-weight: bold;
@@ -405,7 +431,7 @@ body {
     line-height: 25px;
 }
 
-.footer-top-get h5{
+.footer-top-get h5 {
     font-weight: bold;
     font-size: 32px;
     color: #FFFFFF;
@@ -418,7 +444,7 @@ body {
     line-height: 30px;
 }
 
-.footer-bottom{
+.footer-bottom {
     text-align: center;
     font-size: 20px;
     color: #FFFFFF50;
@@ -426,8 +452,81 @@ body {
     border-top: 1.4px solid #FFFFFF10;
 }
 
+/* responsive related styles */
+.hide {
+    display: none !important;
+}
+
+/* responsive for (max-width:576px) */
+@media screen and (max-width:576px) {
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-menu {
+        display: inline;
+    }
+
+    .header-container {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .hero-container-txt {
+        width: 85vw;
+    }
+
+    .common-habit-card img {
+        width: 70%;
+    }
+
+    .team-container-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-top,
+    .habit-cards,
+    .run-container,
+    .hero-container {
+        flex-direction: column;
+    }
+}
 
 
+/* responsive for (max-width:992px) */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .hero-container {
+        flex-direction: column;
+    }
 
+    .hero-container-txt {
+        width: 70vw;
+    }
 
+    .run-container{
+        gap: 50px;
+    }
 
+    .habit-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .common-habit-card img {
+        width: 70%;
+    }
+
+    .footer-top{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .footer-top-fitness{
+        grid-column: span 2;
+    }
+
+}
