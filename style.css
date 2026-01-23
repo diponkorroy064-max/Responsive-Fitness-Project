@@ -227,6 +227,7 @@ h5 {
 .habit-cards {
     /* background-color: aqua; */
     display: flex;
+    justify-content: space-around;
     gap: 30px;
 }
 
@@ -257,7 +258,7 @@ h5 {
     margin-bottom: 100px;
     display: flex;
     gap: 165px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(34, 34, 34, 1);
     border-radius: 18px;
